@@ -45,6 +45,8 @@ def test_verify_pwlocators(page: Page):
     page.wait_for_timeout(5000)
 
     # 7) page.get_by_test_id()
+    expect(page.get_by_test_id("profile-name")).to_have_text("John Doe")
+    expect(page.get_by_test_id("profile-email")).to_have_text("john.doe@example.com")
 
 
 
