@@ -2,6 +2,8 @@ import time
 import re
 from playwright.sync_api import Page, expect
 
+#These are the recommended built-in locators.
+
 # 1) page.get_by_alt_text()
 # 2) page.get_by_text()
 # 3) page.get_by_role()
